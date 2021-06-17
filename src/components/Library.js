@@ -4,8 +4,8 @@ import styled from 'styled-components';
 
 const demoCases = [
   { case_id: 1, shelves: [
-    { shelf_id: 1, books: [{title: 'Moby Dick', color: 'blue'}, {title: 'The Old Man and the Sea', color: 'red'}]},
-    { shelf_id: 2, books: [{title: 'The Wealth of Nations', color: 'aqua'}]}
+    { shelf_id: 1, books: [{title: 'Moby Dick', color: 'navy'}, {title: 'The Old Man and the Sea', color: 'grey'}]},
+    { shelf_id: 2, books: [{title: 'The Wealth of Nations', color: 'teal'}]}
   ]},
   {case_id: 2, shelves: [
     { shelf_id: 3, books: []},

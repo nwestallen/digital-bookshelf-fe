@@ -10,11 +10,9 @@ const BookDiv = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: yellow;
   height: 250px;
 
-  ${props => (props.bookColor === 'blue' ? `background: #42658aff`: null)}
-  ${props => (props.bookColor === 'red' ? `background: red`: null)}
+  ${props => (`background: ${props.bookColor}`)}
 `;
 
 const  Book = props =>  {
