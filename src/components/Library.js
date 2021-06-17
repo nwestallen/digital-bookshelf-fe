@@ -1,10 +1,10 @@
 import React from 'react';
-import Book from './Book';
+import Shelf from './Shelf';
 
 const Library = props => {
   return (
     <div>
-      <Book title='Moby Dick'/>
+      <Shelf />
     </div>
   )
 };
