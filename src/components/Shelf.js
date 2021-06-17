@@ -4,10 +4,9 @@ import Book from './Book';
 
 const ShelfDiv = styled.div`
   display: flex;
-  width: 500px;
+  width: 90%;
   height: 275px;
   border: 20px solid #895b1eff;
-  margin: auto;
   background-color: black;
   align-items: flex-end;
 `
