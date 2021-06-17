@@ -1,11 +1,14 @@
-import logo from './logo.svg';
 import './App.css';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
+import LoginPage from './components/LoginPage';
+import Library from './components/Library';
 
 function App() {
   return (
-    <div className="App">
-      <h1>PLACEHOLDER</h1>
-    </div>
+    <Router>
+      <Route exact path='/' component={LoginPage} />
+      <Route path='/library' component={Library} />
+    </Router>
   );
 }
 
