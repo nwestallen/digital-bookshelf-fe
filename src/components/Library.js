@@ -1,6 +1,17 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Case from './Case';
 import styled from 'styled-components';
+
+const demoCases = [
+  { case_id: 1, shelves: [
+    { shelf_id: 1, books: [{title: 'Moby Dick', color: 'blue'}, {title: 'The Old Man and the Sea', color: 'red'}]},
+    { shelf_id: 2, books: [{title: 'The Wealth of Nations', color: 'aqua'}]}
+  ]},
+  {case_id: 2, shelves: [
+    { shelf_id: 3, books: []},
+    { shelf_id: 4, books: [{title: 'Strucutre and Interpretation of Computer Programs', color:'red'}]}
+  ]}
+  ]
 
 const LibDiv = styled.div`
   display: flex;
@@ -11,11 +22,14 @@ const LibDiv = styled.div`
 `
 
 const Library = props => {
+
+  const [ cases, setCases ] = useState(demoCases);
+
   return (
     <LibDiv>
-      <Case />
-      <Case />
+      {cases.map((casedata) => <Case shelves={casedata.shelves}/>)}
     </LibDiv>
+    
   )
 };
 

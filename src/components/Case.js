@@ -11,10 +11,12 @@ const CaseDiv = styled.div`
 `
 
 const Case = props =>  {
+
+  const { shelves } = props;
+
   return (
     <CaseDiv>
-      <Shelf />
-      <Shelf />
+      {shelves.map(shelf => <Shelf books={ shelf.books }/>)}
     </CaseDiv>
   )
 };

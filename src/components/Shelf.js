@@ -12,10 +12,12 @@ const ShelfDiv = styled.div`
 `
 
 const Shelf = props =>  {
+
+  const { books } = props;
+
   return (
     <ShelfDiv>
-      <Book title='Wealth of Nations' bookColor='red' />
-      <Book title='Moby Dick' bookColor='blue' />
+      {books.map(book => <Book title={book.title} bookColor={book.color}/>)}
     </ShelfDiv>
   )
 };
