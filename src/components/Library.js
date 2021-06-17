@@ -1,9 +1,10 @@
 import React from 'react';
+import Book from './Book';
 
 const Library = props => {
     return (
         <div>
-            All Them Books Will Be Here
+            <Book title='Moby Dick'/>
         </div>
     )
 };
