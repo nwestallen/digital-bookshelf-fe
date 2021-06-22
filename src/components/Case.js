@@ -16,7 +16,7 @@ const Case = props =>  {
 
   return (
     <CaseDiv>
-      {shelves.map(shelf => <Shelf books={ shelf.books }/>)}
+      {shelves.map(shelf => <Shelf books={ (shelf.books ? shelf.books : []) }/>)}
     </CaseDiv>
   )
 };

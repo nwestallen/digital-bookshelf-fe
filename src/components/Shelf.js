@@ -17,7 +17,7 @@ const Shelf = props =>  {
 
   return (
     <ShelfDiv>
-      {books.map(book => <Book title={book.title} bookColor={book.color}/>)}
+      {books.map(book => <Book title={book.book_title} bookColor={book.book_color}/>)}
     </ShelfDiv>
   )
 };
