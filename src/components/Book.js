@@ -10,6 +10,7 @@ const BookDiv = styled.div`
   justify-content: center;
   align-items: center;
   height: 250px;
+  border-radius: 3px;
 
   ${props => (`background: ${props.bookColor}`)}
 `;

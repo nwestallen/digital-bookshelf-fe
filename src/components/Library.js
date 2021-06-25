@@ -18,8 +18,11 @@ const demoCases = [
 const LibDiv = styled.div`
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-evenly;
   width: 90%;
+  margin: auto;
+  background-color: beige;
   /* border: 2px solid blue; */
 `
 

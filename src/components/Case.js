@@ -7,7 +7,9 @@ const CaseDiv = styled.div`
   flex-direction: column;
   margin: 20px;
   /* border: 2px solid red; */
-  width: 500px;
+  min-width: 475px;
+  box-shadow: -5px -5px #5C4033;
+  padding: 0px
 `
 
 const Case = props =>  {
