@@ -1,4 +1,4 @@
-import './App.css';
+import './App.less';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 import LoginPage from './components/LoginPage';
 import Library from './components/Library';

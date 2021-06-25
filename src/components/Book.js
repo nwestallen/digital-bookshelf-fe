@@ -5,12 +5,12 @@ const BookDiv = styled.div`
   color: white;
   writing-mode: vertical-rl;
   padding: 10px;
-  width: 50px;
+  width: 12.5%;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 250px;
   border-radius: 3px;
+  height: 98%;
 
   ${props => (`background: ${props.bookColor}`)}
 `;
